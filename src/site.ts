@@ -1,4 +1,5 @@
 export default {
-  title: 'îles',
-  description: 'Islands of interactivity with Vue in Vite.js'
-}
+  title: "Imam Susanto",
+  description: "Website Pribadi milik Imam Susanto",
+  author: "Imam Susanto",
+};
