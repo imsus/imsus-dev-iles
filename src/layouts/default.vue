@@ -1,11 +1,29 @@
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
 
-<!-- <script async client:load lang="ts" type="module">
-import initDark from '~/assets/init-dark.js'
-initDark();
+useHead({
+  script: [
+    {
+      children: `(function () {
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()`
+    },
+    {
+      src: '/js/quicklink.umd.js',
+      async: true
+    }
+  ]
+})
+</script>
 
-import * as quicklink from '~/assets/quicklink.mjs'
-quicklink.listen();
-</script> -->
+<script client:load>
+if ('quicklink' in window) {
+  quicklink.listen();
+}
+</script>
 
 <template>
   <div id="default-layout">
@@ -13,7 +31,7 @@ quicklink.listen();
     <Head>
       <meta property="author" :content="$site.author">
       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;800&display=swap"
         rel="stylesheet">
@@ -24,13 +42,13 @@ quicklink.listen();
     <header class="pt-16 pb-30 px-6">
       <div class="flex items-center max-w-[38rem] mx-auto w-full">
         <div class="font-medium leading-normal">
-          <div>Imam Susanto</div>
+          <router-link to="/">Imam Susanto</router-link>
           <div class="text-gray-500 dark:text-gray-500">Web Developer</div>
           <div class="text-gray-500 dark:text-gray-500">Tangerang Selatan, Banten</div>
         </div>
         <div class="flex items-center ml-auto">
           <div>
-            <img class="rounded-full h-18 w-18" src="https://frankchimero.com/fc.jpg" alt="">
+            <img class="rounded-full h-[4.5rem] w-[4.5rem]" src="https://frankchimero.com/fc.jpg" alt="">
           </div>
         </div>
       </div>
