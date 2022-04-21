@@ -1,7 +1,7 @@
-build = 
-publish = "dist"
-command = "npm run build"
+[build]
+  publish = "dist"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [build.environment]
-NODE_VERSION = "16"
-# NPM_FLAGS = "--version" # uncomment if using pnpm to skip npm install
+  NODE_VERSION = "16"
+  NPM_FLAGS = "--version" # uncomment if using pnpm to skip npm install
