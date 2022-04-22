@@ -48,7 +48,7 @@
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">Newsletter</div>
           <div class="col-span-5 lg:col-span-4">
             <form action="" class="flex flex-col gap-y-3">
-              <label for="newsletter-email" class="block text-gray-600 dark:text-gray-300">Sent quarterly-ish.</label>
+              <label for="newsletter-email" class="block text-gray-600 dark:text-gray-300">Dikirim per 3 bulan.</label>
               <div class="flex gap-x-[1.25rem]">
                 <input id="newsletter-email" class="border dark:bg-black dark:border-gray-700 h-10 w-full px-3 rounded"
                   type="email" placeholder="Your email address" required>
@@ -60,99 +60,59 @@
         </div>
       </section>
       <section>
-        <h2 class="font-medium mb-6">Selected Writing</h2>
+        <h2 class="font-medium mb-6">Selected Projects</h2>
         <div class="grid grid-cols-5 lg:gap-y-3">
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2018</div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2019</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3><a href="#" class="underline"><i class="not-italic font-medium">Everything Easy is Hard Again</i></a>
+            <h3><a href="https://lemon.cm" target="_blank" rel="noopener" class="underline"><i
+                  class="not-italic font-medium">Lemon Platform</i></a>
             </h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">Presented at Awwwards Conference in Berlin,
-              Germany</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">A talk about longevity in technology: can a
-              person
-              have 20 years of experience or five
-              years, repeated
-              four times?</p>
+            <small class="text-sm text-gray-500 dark:text-gray-400">Laravel, Vue 2, Inertia, Quasar</small>
+            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Platform yang memudahkan Brand dan Influencer
+              dalam mengelola dan berpartisipasi dalam influencer marketing.</p>
           </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2015</div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2014</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3><a href="#" class="underline"><i class="not-italic font-medium">The Web’s Grain</i></a>
+            <h3><a href="https://kawaiibeautyjapan.com" class="underline"><i class="not-italic font-medium">Kawaii
+                  Beauty Japan</i></a>
             </h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">Presented at Webstock in Wellington, New
-              Zealand</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Is there deeper understanding in using a
-              browser’s
-              built-in affordances to guide web design decisions?</p>
-          </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2013</div>
-          <div class="col-span-5 lg:col-span-4">
-            <h3><a href="#" class="underline"><i class="not-italic font-medium">What Screens Wants</i></a>
-            </h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">Presented at Build in Belfast, N. Ireland</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Digital’s medium is the screen. What’s does it
-              mean to
-              natively design for this canvas?</p>
-          </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2012</div>
-          <div class="col-span-5 lg:col-span-4">
-            <h3><a href="#" class="underline"><i class="not-italic font-medium">The Shape of Design</i></a>
-            </h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">Purchase at Amazon or BuyOlympia (Support
-              Indie!)</small>
-            <p class="mt-3 lg:mb-5 text-gray-600 dark:text-gray-300">A little philosophical handbook about design
-              and
-              making things for others that focuses on the Why questions.</p>
+            <small class="text-sm text-gray-500 dark:text-gray-400">Custom CMS menggunakan Laravel</small>
+            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Portal website yang menyediakan informasi
+              untuk wanita di Indonesia.</p>
           </div>
         </div>
       </section>
       <section>
         <h2 class="font-medium mb-6">Work Experience</h2>
         <div class="grid grid-cols-5 lg:gap-y-3">
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2022–Now</div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2020–Now</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3 class="font-medium">Head of Brand at Modern Treasury</h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">NYC/SF & Remote</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Establishing the creative vision and visual
-              tone for
-              the fintech unicorn. Ship-steering, team-building, and strategic design swash-buckling.</p>
+            <h3 class="font-medium">Chief Technology Officer</h3>
+            <small class="text-sm text-gray-500 dark:text-gray-400">PT C Channel Media Indonesia</small>
+            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Launching and maintaining Lemon Platform,
+              adding features, managing developers, and improving development team productivity.</p>
           </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2020–2022</div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2018–2020</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3 class="font-medium">Creative Director at Fictive Kin</h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">New York, NY & Remote</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Setting creative vision, providing design
-              leadership,
-              establishing process, and managing client relationships, while participating as an IC at a leading digital
-              agency whose clients include Sweetgreen, Ogilvy, National Geographic, TripAdvisor, and Samsung.</p>
+            <h3 class="font-medium">Head of Development Team</h3>
+            <small class="text-sm text-gray-500 dark:text-gray-400">PT C Channel Media Indonesia</small>
+            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Working with developers to create prototype of
+              Lemon Platform. Task includes managing developer, architecting database and applications.</p>
           </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2017–2020</div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2015–2018</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3 class="font-medium">Self-employed Designer</h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">New York, NY</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Design and consulting for early stage startups
-              and
-              established leaders at the intersection of brand and digital product. Clients included: Etsy, Meetup,
-              Kaplan, Abstract, and many YC startups.</p>
+            <h3 class="font-medium">Full Stack Web Developer</h3>
+            <small class="text-sm text-gray-500 dark:text-gray-400">PT Media Makmur (acquired by C Channel
+              Indonesia)</small>
+            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Adding features and maintaining Kawaii Beauty
+              Japan Website. Also working on several microsites for client campaign.</p>
           </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2014–2017</div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2014–2015</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3 class="font-medium">Co-founder at Abstract</h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">New York, NY</small>
-            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">The traditional set of founder
-              responsibilities:
-              setting vision, creating product definition, fundraising, and company leadership. Lead design across brand
-              and product, and helped define the company’s go-to-market approach.</p>
-          </div>
-          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2001–2014</div>
-          <div class="col-span-5 lg:col-span-4">
-            <h3 class="font-medium">
-              Self-employed Designer</h3>
-            <small class="text-sm text-gray-500 dark:text-gray-400">Portland, OR & New York, NY</small>
-            <p class="mt-3 lg:mb-5 text-gray-600 dark:text-gray-300">Product design, web design, publication design,
-              branding, and illustration. Clients include: Nike, Microsoft, NPR, Adobe, Facebook, <i>WIRED</i>,
-              <i>Bloomberg
-                Businessweek</i>, O’Reilly Media, <i>The Atlantic</i>, and Justin Bieber (sorta).
-            </p>
+            <h3 class="font-medium">Front End Web Developer</h3>
+            <small class="text-sm text-gray-500 dark:text-gray-400">PT Media Makmur</small>
+            <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Designing front end interface for Kawaii
+              Beauty Japan website. Tasks including: designing, creating HTML & Blade views.</p>
           </div>
         </div>
       </section>
