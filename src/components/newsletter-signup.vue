@@ -27,6 +27,7 @@
 import { ref } from 'vue'
 import axios from 'axios'
 
+const is_development = import.meta.env.DEV
 const token = import.meta.env.VITE_BUTTONDOWN_API_KEY
 
 const email = ref('')
@@ -35,7 +36,7 @@ const email_status = ref('')
 const submitEmailForNewsletter = () => {
   email_status.value = 'sending'
 
-  axios.post('https://api.buttondown.email/v1/subscribers', {
+  axios.post(is_development ? 'https://api.buttondown.email/v1/subscribers' : '/.netlify/functions/subscribe-newsletter', {
     email: email.value,
     referrer_url: 'https://imsus.dev',
     tags: ['visitor']
