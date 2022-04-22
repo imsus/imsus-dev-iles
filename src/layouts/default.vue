@@ -35,6 +35,10 @@ if ('quicklink' in window) {
   <div id="default-layout" class="px-6 py-[2rem] lg:py-[5rem]">
     <Head>
       <meta property="author" :content="$site.author">
+      <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
       <html lang="id-ID" class="scroll-smooth" />
       <body class="dark:bg-black dark:text-white antialiased font-sans"></body>
     </Head>
