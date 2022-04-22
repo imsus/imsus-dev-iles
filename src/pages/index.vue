@@ -7,37 +7,43 @@
     <div class="max-w-[38rem] mx-auto w-full mt-[7.5rem] flex flex-col gap-y-[3.75rem]">
       <section>
         <h2 class="font-medium mb-6">About</h2>
-        <p class="text-gray-600 dark:text-gray-300">I’m a designer with 20 years of experience in brand, product
-          design, and creative direction. I have an international reputation for creating warm, smart, and effective
-          design for a variety of companies in technology and publishing. Among these is <a href="#"
-            class="underline hover:text-black dark:hover:text-white">Abstract</a> (acq. Adobe), which I
-          co-founded in 2014. I’m head of brand at <a href="#"
-            class="underline hover:text-black dark:hover:text-white">Modern&nbsp;Treasury</a>.
+        <p class="text-gray-600 dark:text-gray-300">Saya adalah seorang web developer dengan pengalaman 8 tahun di
+          bidang full-stack. Saya bekerja di industri agency, media, dan periklanan. Sekarang saya berkutat di bidang
+          influencer marketing sekaligus mengembangkan produk <a href="https://lemon.cm"
+            class="underline hover:text-black dark:hover:text-white" target="_blank" rel="noopener">Lemon Platform</a>.
+          Saat ini, saya menjabat sebagai Chief Technology Officer di <a href="https://cchan.co.id"
+            class="underline hover:text-black dark:hover:text-white" target="_blank" rel="noopener">PT C Channel
+            Indonesia</a>..
         </p>
-        <p class="mt-4 text-gray-600 dark:text-gray-300">I also write and speak about design. Several of my essays and
-          lectures are assigned in design classrooms around the world and act as foundational texts in the web design
-          industry, including <a href="#"
-            class="underline hover:text-black dark:hover:text-white"><i>Everything&nbsp;Easy&nbsp;is&nbsp;Hard&nbsp;Again</i></a>,
-          <a href="#" class="underline hover:text-black dark:hover:text-white"><i>The&nbsp;Web’s&nbsp;Grain</i></a>, and
-          <a href="#" class="underline hover:text-black dark:hover:text-white"><i>What&nbsp;Screens&nbsp;Want</i></a>.
-          In 2012, I wrote, illustrated, and published The
-          <a href="#" class="underline hover:text-black dark:hover:text-white"><i>Shape&nbsp;of&nbsp;Design</i></a>.
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Beberapa produk yang telah saya buat antara lain Lemon
+          Platform, termasuk Lemon for Brand dan Lemon for Influencer. Ketika awal karir saya sebagai web developer,
+          saya membantu membuat website <a href="https://kawaiibeautyjapan.com"
+            class="underline hover:text-black dark:hover:text-white" target="_blank" rel="noopener">Kawaii Beauty
+            Japan</a>. Selain itu ada beberapa microsite, dan library yang telah saya open-source di Github.
         </p>
       </section>
       <section>
         <h2 class="font-medium mb-6">Contact</h2>
         <div class="grid grid-cols-5 lg:gap-y-3">
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">Email</div>
-          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="#"
-              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white">fchimero@gmail.com</a>
+          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="mailto:hi@imsus.dev"
+              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white" target="_blank"
+              rel="noopener">hi@imsus.dev</a>
           </div>
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">Twitter</div>
-          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="#"
-              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white">@frank_chimero</a>
+          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="https://twitter.com/imsus"
+              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white" target="_blank"
+              rel="noopener">@imsus</a>
+          </div>
+          <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">Github</div>
+          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="https://github.com/imsus"
+              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white" target="_blank"
+              rel="noopener">@imsus</a>
           </div>
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">LinkedIn</div>
-          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="#"
-              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white">@fchimero</a>
+          <div class="col-span-5 lg:col-span-4 mb-9 lg:mb-0"><a href="https://www.linkedin.com/in/imsus"
+              class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white" target="_blank"
+              rel="noopener">@imsus</a>
           </div>
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">Newsletter</div>
           <div class="col-span-5 lg:col-span-4">
