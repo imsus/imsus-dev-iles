@@ -58,7 +58,7 @@
         <div class="grid grid-cols-5 lg:gap-y-3">
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2018</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3><a href="" class="underline"><i class="not-italic font-medium">Everything Easy is Hard Again</i></a>
+            <h3><a href="#" class="underline"><i class="not-italic font-medium">Everything Easy is Hard Again</i></a>
             </h3>
             <small class="text-sm text-gray-500 dark:text-gray-400">Presented at Awwwards Conference in Berlin,
               Germany</small>
@@ -70,7 +70,7 @@
           </div>
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2015</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3><a href="" class="underline"><i class="not-italic font-medium">The Web’s Grain</i></a>
+            <h3><a href="#" class="underline"><i class="not-italic font-medium">The Web’s Grain</i></a>
             </h3>
             <small class="text-sm text-gray-500 dark:text-gray-400">Presented at Webstock in Wellington, New
               Zealand</small>
@@ -80,7 +80,7 @@
           </div>
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2013</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3><a href="" class="underline"><i class="not-italic font-medium">What Screens Wants</i></a>
+            <h3><a href="#" class="underline"><i class="not-italic font-medium">What Screens Wants</i></a>
             </h3>
             <small class="text-sm text-gray-500 dark:text-gray-400">Presented at Build in Belfast, N. Ireland</small>
             <p class="mt-3 mb-9 lg:mb-5 text-gray-600 dark:text-gray-300">Digital’s medium is the screen. What’s does it
@@ -89,7 +89,7 @@
           </div>
           <div class="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1">2012</div>
           <div class="col-span-5 lg:col-span-4">
-            <h3><a href="" class="underline"><i class="not-italic font-medium">The Shape of Design</i></a>
+            <h3><a href="#" class="underline"><i class="not-italic font-medium">The Shape of Design</i></a>
             </h3>
             <small class="text-sm text-gray-500 dark:text-gray-400">Purchase at Amazon or BuyOlympia (Support
               Indie!)</small>
