@@ -18,6 +18,7 @@ useHead({
     {
       src: 'https://api.pirsch.io/pirsch.js',
       id: 'pirschjs',
+      defer: true,
       'data-code': 'oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b'
     }
   ]
@@ -32,12 +33,10 @@ if ('quicklink' in window) {
 
 <template>
   <div id="default-layout" class="px-6 py-[2rem] lg:py-[5rem]">
-
     <Head>
       <meta property="author" :content="$site.author">
       <html lang="id-ID" class="scroll-smooth" />
-
-    <body class="dark:bg-black dark:text-white antialiased font-sans"></body>
+      <body class="dark:bg-black dark:text-white antialiased font-sans"></body>
     </Head>
     <header class="pb-30">
       <div class="flex items-start max-w-[38rem] mx-auto w-full gap-6">

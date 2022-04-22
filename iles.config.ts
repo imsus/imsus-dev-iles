@@ -4,5 +4,5 @@ import icons from "@islands/icons";
 
 export default defineConfig({
   siteUrl: "https://imsus.dev",
-  modules: [icons({ autoInstall: true }), images()],
+  modules: [icons({ autoInstall: true }), images({})],
 });
