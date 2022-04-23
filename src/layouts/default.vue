@@ -74,7 +74,7 @@ if ('quicklink' in window) {
           <div class="text-gray-500 dark:text-gray-400">Tangerang Selatan, Banten</div>
         </div>
         <div class="ml-auto flex">
-          <DarkMode client:load class="h-12 w-12"></DarkMode>
+          <DarkMode client:only class="h-12 w-12"></DarkMode>
         </div>
       </div>
     </header>
