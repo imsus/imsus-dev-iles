@@ -28,3 +28,6 @@ dist-ssr
 
 .iles-ssg-temp/
 .env
+
+# Local Netlify folder
+.netlify

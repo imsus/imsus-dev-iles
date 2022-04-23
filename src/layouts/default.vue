@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 useHead({
   script: [
     {
@@ -20,12 +18,22 @@ useHead({
       id: 'pirschjs',
       defer: true,
       'data-code': 'oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b'
+    },
+    {
+      type: 'module',
+      children: `import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-window.prod.mjs';
+
+        if ('serviceWorker' in navigator) {
+          const wb = new Workbox('/sw.js');
+
+          wb.register();
+        }`
     }
   ]
 })
 </script>
 
-<script client:load>
+<script client:load lang="ts">
 if ('quicklink' in window) {
   quicklink.listen();
 }
