@@ -5,7 +5,7 @@ const isDark = useDark({
   onChanged(dark: boolean) {
     document.documentElement.classList.toggle('dark', dark ? true : false);
     document.documentElement.style.setProperty("color-scheme", dark ? 'dark' : 'light');
-    document.querySelector('meta[name=theme-color]')?.setAttribute('content', dark ? '#000000' : '#ffffff');
+    document.querySelector('meta[name=theme-color]')?.setAttribute('content', dark ? '#000000' : '#f1e54e');
   },
 })
 

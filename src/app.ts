@@ -6,7 +6,7 @@ export default defineApp({
     meta: [
       {
         name: "theme-color",
-        content: "#ffffff",
+        content: "#f1e54e",
       },
     ],
   },

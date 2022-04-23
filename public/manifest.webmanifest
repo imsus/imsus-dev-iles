@@ -1,13 +1,13 @@
 {
     "name": "Imam Susanto",
     "short_name": "imsus.dev",
-    "start_url": "/",
+    "start_url": "/?utm_source=homescreen",
     "display": "standalone",
     "orientation": "portrait",
-    "background_color": "#ffffff",
     "lang": "id",
     "scope": "/",
-    "theme_color": "#ffffff",
+    "theme_color": "#f1e54e",
+    "background_color": "#ffffff",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
