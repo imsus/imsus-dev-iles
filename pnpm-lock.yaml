@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@builder.io/partytown': ^0.5.2
   '@iconify/json': ^2.1.30
   '@islands/icons': ^0.1.1
   '@islands/images': ^0.3.2
@@ -15,8 +16,10 @@ specifiers:
   vitest: '*'
   vue-tsc: ^0.34.7
   workbox-cli: ^6.5.3
+  workbox-window: ^6.5.3
 
 devDependencies:
+  '@builder.io/partytown': 0.5.2
   '@iconify/json': 2.1.30
   '@islands/icons': 0.1.1
   '@islands/images': 0.3.2
@@ -31,6 +34,7 @@ devDependencies:
   vitest: 0.9.3
   vue-tsc: 0.34.7_typescript@4.6.3
   workbox-cli: 6.5.3
+  workbox-window: 6.5.3
 
 packages:
 
@@ -1185,6 +1189,11 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.16.7
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@builder.io/partytown/0.5.2:
+    resolution: {integrity: sha512-DHJPs5WPVFExUuGMsuA6yZQ6OPtVVv/3JJK9pzGrNfvuGNvlip5v7xOhXwZG26HLU9ZrrOFsOGhn5FUT2H7dPw==}
+    hasBin: true
     dev: true
 
   /@iconify/json/2.1.30:

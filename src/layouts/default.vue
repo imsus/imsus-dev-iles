@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { partytownSnippet } from '@builder.io/partytown/integration';
+import { onMounted } from 'vue';
+
 useHead({
   script: [
     {
@@ -17,17 +20,21 @@ useHead({
       src: 'https://api.pirsch.io/pirsch.js',
       id: 'pirschjs',
       defer: true,
-      'data-code': 'oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b'
+      'data-code': 'oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b',
+      type: 'text/partytown'
     },
     {
       type: 'module',
-      children: `import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-window.prod.mjs';
+      children: `import { Workbox } from '/js/workbox-window.prod.mjs';
 
-        if ('serviceWorker' in navigator) {
-          const wb = new Workbox('/sw.js');
+if ('serviceWorker' in navigator) {
+  const wb = new Workbox('/sw.js');
 
-          wb.register();
-        }`
+  wb.register();
+}`
+    },
+    {
+      children: partytownSnippet()
     }
   ]
 })

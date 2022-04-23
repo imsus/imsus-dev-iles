@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "iles dev --open --host",
-    "build": "iles build && workbox generateSW",
+    "build": "pnpm run partytown && iles build && workbox generateSW",
     "preview": "iles preview --open --port 5050",
+    "partytown": "partytown copylib public/~partytown",
     "test": "iles test",
     "typecheck": "vue-tsc --noEmit"
   },
@@ -12,6 +13,7 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@builder.io/partytown": "^0.5.2",
     "@iconify/json": "^2.1.30",
     "@islands/icons": "^0.1.1",
     "@islands/images": "^0.3.2",
@@ -25,6 +27,7 @@
     "typescript": "^4.6.3",
     "vitest": "*",
     "vue-tsc": "^0.34.7",
-    "workbox-cli": "^6.5.3"
+    "workbox-cli": "^6.5.3",
+    "workbox-window": "^6.5.3"
   }
 }
