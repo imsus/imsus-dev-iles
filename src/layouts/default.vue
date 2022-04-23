@@ -12,7 +12,7 @@ useHead({
     document.documentElement.style.setProperty("color-scheme", setting);
     document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');
   }
-)()`
+})()`
     },
     {
       src: '/js/quicklink.umd.js',
@@ -51,7 +51,6 @@ if ('quicklink' in window) {
 <template>
   <div id="default-layout" class="px-6 py-[2rem] lg:py-[5rem]">
     <Head>
-      <meta name="theme-color" content="#ffffff">
       <meta property="author" :content="$site.author">
       <link rel="preconnect" href="https://api.pirsch.io">
       <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
