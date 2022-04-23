@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { partytownSnippet } from '@builder.io/partytown/integration';
-import { onMounted } from 'vue';
 
 useHead({
   script: [
@@ -8,20 +7,23 @@ useHead({
       children: `(function () {
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
-  if (setting === 'dark' || (prefersDark && setting !== 'light'))
-    document.documentElement.classList.toggle('dark', true)
-})()`
+  if (setting === 'dark' || (prefersDark && setting !== 'light')) {
+    document.documentElement.classList.toggle('dark', true);
+    document.documentElement.style.setProperty("color-scheme", setting);
+    document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');
+  }
+)()`
     },
     {
       src: '/js/quicklink.umd.js',
       async: true
     },
     {
-      src: 'https://api.pirsch.io/pirsch.js',
+      type: 'text/partytown',
+      src: '/js/pirsch.js',
       id: 'pirschjs',
       defer: true,
-      'data-code': 'oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b',
-      type: 'text/partytown'
+      'data-code': 'oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b'
     },
     {
       type: 'module',
@@ -49,7 +51,9 @@ if ('quicklink' in window) {
 <template>
   <div id="default-layout" class="px-6 py-[2rem] lg:py-[5rem]">
     <Head>
+      <meta name="theme-color" content="#ffffff">
       <meta property="author" :content="$site.author">
+      <link rel="preconnect" href="https://api.pirsch.io">
       <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
