@@ -10,7 +10,7 @@ const year_experience = new Date().getFullYear() - 2014;
       <section>
         <h2 class="font-medium mb-6">Tentang</h2>
         <p class="text-gray-600 dark:text-gray-300">Saya adalah seorang web developer dengan pengalaman {{
-          year_experience
+            year_experience
         }} tahun di
           bidang full-stack. Saya bekerja di industri agency, media, dan periklanan. Sekarang saya berkutat di bidang
           influencer marketing sekaligus mengembangkan produk <a href="https://lemon.cm"
@@ -51,8 +51,8 @@ const year_experience = new Date().getFullYear() - 2014;
               class="underline text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white" target="_blank"
               rel="noopener">linkedin.com/in/imsus</a>
           </div>
-          <div class="text-gray-500 dark:text-gray-400 col-span-12 lg:col-span-3">Newsletter</div>
-          <div class="col-span-12 lg:col-span-9">
+          <div class="print:hidden text-gray-500 dark:text-gray-400 col-span-12 lg:col-span-3">Newsletter</div>
+          <div class="print:hidden col-span-12 lg:col-span-9">
             <NewsletterSignup client:visible></NewsletterSignup>
           </div>
         </div>
