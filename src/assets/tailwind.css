@@ -3,37 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-  /* inter-regular - latin */
   @font-face {
-    font-family: "Inter";
+    font-family: "Inter var";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100 900;
     font-display: swap;
-    src: local(""),
-      url("~/assets/fonts/inter-v8-latin-regular.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("~/assets/fonts/inter-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url("~/assets/fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+    font-named-instance: "Regular";
   }
-  /* inter-500 - latin */
+
   @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
+    font-family: "Inter var";
+    font-style: italic;
+    font-weight: 100 900;
     font-display: swap;
-    src: local(""),
-      url("~/assets/fonts/inter-v8-latin-500.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("~/assets/fonts/inter-v8-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* inter-700 - latin */
-  @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local(""),
-      url("~/assets/fonts/inter-v8-latin-700.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("~/assets/fonts/inter-v8-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url("~/assets/fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
+    font-named-instance: "Italic";
   }
 }
