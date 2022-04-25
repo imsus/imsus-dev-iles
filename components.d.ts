@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     DarkMode: typeof import('./src/components/dark-mode.vue')['default']
-    Head: typeof import('@vueuse/head')['Head']
     'IconPh:moon': typeof import('~icons/ph/moon')['default']
     'IconPh:sun': typeof import('~icons/ph/sun')['default']
     Island: typeof import('./node_modules/.pnpm/iles@0.7.38/node_modules/iles/dist/client/app/components/Island.vue')['default']
