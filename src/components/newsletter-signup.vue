@@ -44,7 +44,7 @@ import { ref } from 'vue'
 import axios from 'axios'
 
 const is_development = import.meta.env.DEV
-const token = import.meta.env.VITE_BUTTONDOWN_API_KEY
+const token = is_development ? import.meta.env.VITE_BUTTONDOWN_API_KEY : null
 
 const email = ref('')
 const email_form_status = ref('')
@@ -58,9 +58,9 @@ const submitEmailForNewsletter = () => {
     referrer_url: 'https://imsus.dev',
     tags: ['visitor']
   }, {
-    headers: {
+    headers: is_development ? {
       'Authorization': `Token ${token}`
-    }
+    } : undefined
   }).then((response) => {
     email_form_status.value = 'success'
     email_form_response_message.value = 'Silahkan konfirmasi langganan di inbox Kamu!'
