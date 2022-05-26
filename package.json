@@ -13,20 +13,21 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.5.2",
-    "@iconify/json": "^2.1.30",
+    "@builder.io/partytown": "^0.5.4",
+    "@iconify/json": "^2.1.50",
     "@islands/icons": "^0.1.1",
     "@islands/images": "^0.3.2",
-    "@vueuse/core": "^8.3.0",
-    "autoprefixer": "^10.4.4",
+    "@volar-plugins/prettyhtml": "^1.0.0",
+    "@vueuse/core": "^8.5.0",
+    "autoprefixer": "^10.4.7",
     "axios": "^0.26.1",
     "iles": "^0.7.38",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.14",
     "quicklink": "^2.2.0",
     "tailwindcss": "^3.0.24",
-    "typescript": "^4.6.3",
+    "typescript": "^4.7.2",
     "vitest": "*",
-    "vue-tsc": "^0.34.7",
+    "vue-tsc": "^0.34.16",
     "workbox-cli": "^6.5.3",
     "workbox-window": "^6.5.3"
   }

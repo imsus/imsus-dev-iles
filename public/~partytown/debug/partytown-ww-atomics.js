@@ -1,4 +1,4 @@
-/* Partytown 0.5.2 - MIT builder.io */
+/* Partytown 0.5.4 - MIT builder.io */
 (self => {
     const WinIdKey = Symbol();
     const InstanceIdKey = Symbol();
@@ -37,8 +37,18 @@
     const noop = () => {};
     const len = obj => obj.length;
     const getConstructorName = obj => {
+        var _a, _b, _c;
         try {
-            return obj.constructor.name;
+            const constructorName = null === (_a = null == obj ? void 0 : obj.constructor) || void 0 === _a ? void 0 : _a.name;
+            if (constructorName) {
+                return constructorName;
+            }
+        } catch (e) {}
+        try {
+            const zoneJsConstructorName = null === (_c = null === (_b = null == obj ? void 0 : obj.__zone_symbol__originalInstance) || void 0 === _b ? void 0 : _b.constructor) || void 0 === _c ? void 0 : _c.name;
+            if (zoneJsConstructorName) {
+                return zoneJsConstructorName;
+            }
         } catch (e) {}
         return "";
     };
@@ -701,7 +711,7 @@
         return resolvedUrl;
     };
     const resolveUrl = (env, url, noUserHook) => resolveToUrl(env, url, noUserHook) + "";
-    const getPartytownScript = () => `<script src="${partytownLibUrl("partytown.js?v=0.5.2")}"><\/script>`;
+    const getPartytownScript = () => `<script src="${partytownLibUrl("partytown.js?v=0.5.4")}"><\/script>`;
     const createImageConstructor = env => class HTMLImageElement {
         constructor() {
             this.s = "";
@@ -1233,7 +1243,7 @@
                         (() => {
                             if (!webWorkerCtx.$initWindowMedia$) {
                                 self.$bridgeToMedia$ = [ getter, setter, callMethod, constructGlobal, definePrototypePropertyDescriptor, randomId, WinIdKey, InstanceIdKey, ApplyPathKey ];
-                                webWorkerCtx.$importScripts$(partytownLibUrl("partytown-media.js?v=0.5.2"));
+                                webWorkerCtx.$importScripts$(partytownLibUrl("partytown-media.js?v=0.5.4"));
                                 webWorkerCtx.$initWindowMedia$ = self.$bridgeFromMedia$;
                                 delete self.$bridgeFromMedia$;
                             }
@@ -1363,8 +1373,9 @@
                     $parentWinId$: $parentWinId$,
                     $window$: new Proxy(win, {
                         get: (win, propName) => {
+                            var _a;
                             if ("string" != typeof propName || isNaN(propName)) {
-                                return win[propName];
+                                return (null === (_a = webWorkerCtx.$config$.mainWindowAccessors) || void 0 === _a ? void 0 : _a.includes(propName)) ? getter(this, [ propName ]) : win[propName];
                             }
                             {
                                 let frame = getChildEnvs()[propName];

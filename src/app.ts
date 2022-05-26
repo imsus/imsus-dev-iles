@@ -7,47 +7,47 @@ export default defineApp({
     return {
       htmlAttrs: {
         lang: "id-ID",
-        class: "scroll-smooth",
+        class: "scroll-smooth"
       },
       bodyAttrs: {
-        class: "dark:bg-black dark:text-white antialiased font-sans",
+        class: "dark:bg-black dark:text-white antialiased font-sans"
       },
       link: [
         {
           rel: "preconnect",
-          href: "https://api.pirsch.io",
+          href: "https://api.pirsch.io"
         },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
-          href: "/icons/apple-touch-icon.png",
+          href: "/icons/apple-touch-icon.png"
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/icons/favicon-32x32.png",
+          href: "/icons/favicon-32x32.png"
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/icons/favicon-16x16.png",
+          href: "/icons/favicon-16x16.png"
         },
         {
           rel: "manifest",
-          href: "/manifest.webmanifest",
-        },
+          href: "/manifest.webmanifest"
+        }
       ],
       meta: [
         {
           name: "theme-color",
-          content: "#f1e54e",
+          content: "#f1e54e"
         },
         {
           property: "author",
-          content: site.author,
-        },
+          content: site.author
+        }
       ],
       script: [
         {
@@ -59,17 +59,17 @@ export default defineApp({
     document.documentElement.style.setProperty("color-scheme", setting);
     document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');
   }
-})()`,
+})()`
         },
         {
-          children: partytownSnippet(),
+          children: partytownSnippet()
         },
         {
           type: "text/partytown",
           src: "/js/pirsch.js",
           id: "pirschjs",
           defer: true,
-          "data-code": "oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b",
+          "data-code": "oWVBQPDXf0hsLBRW0FUPWrPthlPP7k1b"
         },
         {
           type: "module",
@@ -77,7 +77,7 @@ export default defineApp({
 
 window.addEventListener('load', () => {
   quicklink.listen();
-});`,
+});`
         },
         {
           type: "module",
@@ -87,9 +87,9 @@ if ('serviceWorker' in navigator) {
   const wb = new Workbox('/sw.js');
 
   wb.register();
-}`,
-        },
-      ],
+}`
+        }
+      ]
     };
-  },
+  }
 });
